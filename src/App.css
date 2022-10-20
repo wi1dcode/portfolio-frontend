@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+/* font-family: 'Electrolize', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+/* font-family: 'Alata', sans-serif; */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #161A1D;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------ NAV MENU ------------------------ */
+
+ul li {
+    font-size: 40px;
+}
+
+
+nav .logo_a {
+    font-family: 'Electrolize';
+    font-weight: 500;
+    font-size: 60px;
+    border-bottom: 4px solid #660708;
+}
+
+nav a:hover:not(.logo_a) {
+    border-bottom: 4px solid #660708;
+}
+
+nav a:hover {
+    color: #660708;
+    transition: 0.2s;
+}
+
+/* ------------------------ HEADER ------------------------ */
+
+header {
+    background-image: url(./img/welcome_bg.jpg);
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    background-position: 100%;
+    height: 100%;
+    background-size: 40%;
+    max-height: 1500px;
+    width: 100%;
+}
+
+.window {
+    background-image: url(./img/webgenius2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 58%;
+    position: relative;
+    height: 493px;
+}
+
+.catrix {
+    background-image: url(./img/catrix.gif); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;    
+    height: 100%;
+}
+
+.catrix:not(title) {
+    filter: blur(2px);
+}
+
+.title {
+    font-family: 'Alata';
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    font-size: 45px;
+}
+
+.title .name {
+    font-weight: 400;
+    font-size: 85px ;
+    line-height: 100%;
+}
+
+.title p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-top: 5%;
+    letter-spacing: 0.17em;
+}
+
+/* ------------------------ ABOUT PAGE ------------------------ */
+
+
+.about_inner img {
+    mix-blend-mode: lighten;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 40%;
+}
+
+
+/* ------------------------ PROJECTS PAGE ------------------------ */
+
+.project_window {
+    background-image: url(./img/project_windowtest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 333px;
+    /* margin: 10px; */    
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* ------------------------ FOOTER ------------------------ */
+
+
+footer {
+    background: #3E3E3E;
+    margin-top: 100px;
+    font-size: 15px;
+    padding-top: 5px;
+}
