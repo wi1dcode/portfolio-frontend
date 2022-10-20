@@ -19,7 +19,6 @@ ul li {
     font-size: 40px;
 }
 
-
 nav .logo_a {
     font-family: 'Electrolize';
     font-weight: 500;
@@ -93,6 +92,13 @@ header {
     font-size: 35px;
     margin-top: 5%;
     letter-spacing: 0.17em;
+}
+
+.up {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 99;
 }
 
 /* ------------------------ ABOUT PAGE ------------------------ */
