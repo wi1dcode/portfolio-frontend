@@ -9,10 +9,13 @@ import Window from "../components/Window"
 import Project from "../components/Project"
 import Up from "../components/Up"
 import Contact from "../components/Contact"
+import Others from "../components/Others"
 
 // Projects images
 import Pokemon from "../img/projects/pokemon.png"
 import Todolist from "../img/projects/todolist.png"
+import Blackjack from "../img/projects/blackjack.png"
+import Moovice from "../img/projects/moovice.png"
 
 
 
@@ -54,13 +57,17 @@ const Home = () => {
             <section className="projects" id="projects">
               <Title>Projects</Title>
               <div className="flex flex-wrap justify-around text-center">
+              <Project url="https://blxckjack.netlify.app/" image={Blackjack} title="BlackJack" techno="React"/>
+              <Project url="https://wildapp.netlify.app/" image={Todolist} title="To do list" techno="React"/>
+              <Project url="https://bestmoovice.netlify.app/" image={Moovice} title="Moovice" techno="React / API "/>
               <Project url="https://pokkemon.netlify.com/" image={Pokemon} title="Random Pokemon" techno="React / API"/>
-              <Project url="https://wildapp.netlify.app/"image={Todolist} title="To do list" techno="React"/>
-              <Project/>
-              <Project/>
+              </div>
+              <div className="flex justify-center">
+              <Others/>
               </div>
             </section>
             <section className="contact" id="contact">
+            <Title>Contact</Title>
               <Contact/>
             </section>
           </Container>
